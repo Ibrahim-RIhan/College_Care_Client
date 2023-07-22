@@ -1,0 +1,89 @@
+[
+      {
+        "name": "Sample College 1",
+        "admission_dates": ["2023-08-15", "2023-09-10"],
+        "admission_process": "Online application and entrance exam",
+        "events": [
+          {
+            "name": "Freshers' Welcome Party",
+            "details": "Date: 2023-09-20, Time: 6:00 PM, Venue: Auditorium"
+          },
+          {
+            "name": "Tech Fest",
+            "details": "Date: 2023-11-05 to 2023-11-07, Venue: Campus Grounds"
+          }
+        ],
+        "research_works": {
+          "number": 120,
+          "details": [
+            {
+              "title": "Advancements in Renewable Energy Sources",
+              "faculty": "Dr. Sarah Johnson",
+              "description": "This research explores the latest innovations in renewable energy technologies, focusing on solar and wind power integration.",
+              "publication_date": "2023-03-10",
+              "file_link": "https://example.com/research1.pdf"
+            },
+            {
+              "title": "Understanding Climate Change Patterns",
+              "faculty": "Prof. Michael Smith",
+              "description": "The study analyzes climate change patterns over the last century and the potential impact on different regions of the world.",
+              "publication_date": "2023-05-22",
+              "file_link": "https://example.com/research2.pdf"
+            },
+            {
+              "title": "Exploring Artificial Intelligence in Healthcare",
+              "faculty": "Dr. Emily Williams",
+              "description": "This research investigates the applications of AI in the healthcare sector, such as disease diagnosis and personalized treatment plans.",
+              "publication_date": "2023-07-15",
+              "file_link": "https://example.com/research3.pdf"
+            }
+        
+          ]
+        },
+        "sports_categories": ["Football", "Basketball", "Swimming", "Badminton"],
+        "college_image": "https://example.com/sample_college_1.jpg",
+        "college_rating": 4.5,
+        "college_review": "Sample College 1 provides an excellent learning environment and has a supportive faculty."
+      },
+      {
+        "name": "Sample College 2",
+        "admission_dates": ["2023-09-01", "2023-09-20"],
+        "admission_process": "Offline application and interview",
+        "events": [
+          {
+            "name": "Cultural Fest",
+            "details": "Date: 2023-10-12 to 2023-10-15, Venue: Open-air Amphitheater"
+          },
+          {
+            "name": "Literary Symposium",
+            "details": "Date: 2023-11-25, Time: 10:00 AM, Venue: Seminar Hall"
+          }
+        ],
+        "research_works": {
+          "number": 80,
+          "details": [
+            {
+              "title": "Impacts of Urbanization on Biodiversity",
+              "faculty": "Prof. David Lee",
+              "description": "This research assesses the effects of rapid urbanization on biodiversity and suggests strategies for conservation.",
+              "publication_date": "2023-02-18",
+              "file_link": "https://example.com/research4.pdf"
+            },
+            {
+              "title": "Data Privacy in the Digital Age",
+              "faculty": "Dr. Lisa Anderson",
+              "description": "The study investigates the challenges and concerns related to data privacy in the era of digitalization and proposes privacy-enhancing measures.",
+              "publication_date": "2023-06-05",
+              "file_link": "https://example.com/research5.pdf"
+            }
+          
+          ]
+        },
+        "sports_categories": ["Cricket", "Tennis", "Table Tennis", "Volleyball"],
+        "college_image": "https://example.com/sample_college_2.jpg",
+        "college_rating": 4.2,
+        "college_review": "Sample College 2 offers a diverse range of courses and has a vibrant campus life."
+      }
+]
+
+  

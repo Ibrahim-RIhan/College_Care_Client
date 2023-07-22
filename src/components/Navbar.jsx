@@ -1,13 +1,20 @@
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import AuthContext from "../provider/AuthProvider"
+import { AuthContext } from "../provider/AuthProvider";
+
 
 const Navbar = () => {
-  const user = false
-  // const {user, logout} = useContext(AuthContext)
+  const { user, logOut } = useContext(AuthContext);
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
+  };
+  const handleLogOut = () => {
+    logOut()
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((err) => console.log(err));
   };
   return (
     <nav className="bg-[#FFF8F5]">
@@ -43,7 +50,16 @@ const Navbar = () => {
             </Link>
             {user ? (
               <>
-                <button className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <Link
+                  to="/profile"
+                  className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                {user?.email}
+                </Link>
+                <button
+                  onClick={handleLogOut}
+                  className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
                   Logout
                 </button>
               </>

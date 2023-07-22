@@ -1,9 +1,12 @@
+import FeaturedCollege from "../components/FeaturedCollege";
+import Gallery from "../components/Gallery";
 
 
 const Home = () => {
     return (
         <div>
-            Home
+         <FeaturedCollege></FeaturedCollege>
+         <Gallery></Gallery>
         </div>
     );
 };

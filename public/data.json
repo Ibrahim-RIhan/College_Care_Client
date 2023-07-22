@@ -1,7 +1,7 @@
 [
       {
         "name": "Sample College 1",
-        "admission_dates": ["2023-08-15", "2023-09-10"],
+        "admission_dates": "2023-08-15- 2023-08-23",
         "admission_process": "Online application and entrance exam",
         "events": [
           {
@@ -47,7 +47,7 @@
       },
       {
         "name": "Sample College 2",
-        "admission_dates": ["2023-09-01", "2023-09-20"],
+        "admission_dates": "2023-08-15- 2023-08-23",
         "admission_process": "Offline application and interview",
         "events": [
           {

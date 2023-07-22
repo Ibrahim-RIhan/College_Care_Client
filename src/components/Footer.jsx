@@ -1,7 +1,6 @@
 import {
     FaFacebook,
     FaInstagram,
-    FaLocationArrow,
     FaTwitter,
     FaYoutube,
   } from "react-icons/fa";
@@ -32,7 +31,7 @@ const Footer = () => {
             <p>Services</p>
           </div>
           <div>
-            <h3 className="text-xl font-bold mb-3">About Us</h3>
+            <h3 className="text-xl font-bold ">About Us</h3>
             <p className="my-5">
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, at.
             </p>

@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
+import AuthContext from "../provider/AuthProvider"
 
 const Navbar = () => {
-  const user = true;
+  const user = false
+  // const {user, logout} = useContext(AuthContext)
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
     setIsOpen(!isOpen);

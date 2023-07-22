@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const user = true;
   const [isOpen, setIsOpen] = useState(false);
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -9,13 +11,50 @@ const Navbar = () => {
     <nav className="bg-[#FFF8F5]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex items-center justify-between">
-            <img className="w-[69px]" src="/logo.png" alt="Logo" />
-            <div className="hidden md:block ml-4">
-              <h1 className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                Home
-              </h1>
-            </div>
+          <div>
+            <h1>College Care</h1>
+          </div>
+          <div className="hidden md:block ml-4">
+            <Link
+              to="/"
+              className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Home
+            </Link>
+            <Link
+              to="/colleges"
+              className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Colleges
+            </Link>
+            <Link
+              to="/admission"
+              className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Admission
+            </Link>
+            <Link
+              to="/my-college"
+              className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              My College
+            </Link>
+            {user ? (
+              <>
+                <button className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                  Logout
+                </button>
+              </>
+            ) : (
+              <>
+                <Link
+                  to="/login"
+                  className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                >
+                  Login
+                </Link>
+              </>
+            )}
           </div>
 
           {/* Rest of the code */}
@@ -70,12 +109,46 @@ const Navbar = () => {
         id="mobile-menu"
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+          <Link
+            to="/"
+            className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             Home
-          </a>
+          </Link>
+          <Link
+            to="/colleges"
+            className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          >
+            Colleges
+          </Link>
+          <Link
+            to="/admission"
+            className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          >
+            Admission
+          </Link>
+          <Link
+            to="/my-college"
+            className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+          >
+            My College
+          </Link>
+          {user ? (
+            <>
+              <button className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <Link
+                to="/login"
+                className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Login
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </nav>

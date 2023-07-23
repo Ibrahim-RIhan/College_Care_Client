@@ -1,7 +1,7 @@
 import { useLottie } from "lottie-react";
 import animationData from "../assets/Error Element.json";
 import { Link } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
+
 
 const ErrorPage = () => {
   const options = {
@@ -12,7 +12,7 @@ const ErrorPage = () => {
 
   return (
     <div className="flex flex-col justify-center items-center h-[80vh]">
-      <div className="w-1/3">{View}</div>
+      <div className="w-[40%]">{View}</div>
       <div>
         <Link
           to="/"

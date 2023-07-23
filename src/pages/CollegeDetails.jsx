@@ -1,9 +1,9 @@
-import { useParams } from "react-router-dom";
+import { useLoaderData} from "react-router-dom";
 
 
 const CollegeDetails = () => {
-    const college  = useParams();
-    console.log(college);
+const college = useLoaderData()
+console.log(college);
     return (
         <div>
             Details

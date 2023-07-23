@@ -34,7 +34,23 @@ const Register = () => {
   };
   const handleGoogleLogin = () => {
     signInGoogle()
-      .then(() => {})
+      .then((data) => {
+        const savedUser = {
+          name: data.user.displayName,
+          image: data.user.photoURL,
+          email: data.user.email,
+        };
+        console.log(data);
+        fetch("http://localhost:5000/users", {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(savedUser),
+        })
+        .then((res)=> res.json())
+        .then((data)=>console.log(data))
+      })
       .catch((error) => console.log(error.message));
   };
 

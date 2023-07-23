@@ -12,7 +12,7 @@ const firstThreeColleges = colleges.slice(0, 3);
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-stretch place-items-center gap-10 ">
         {firstThreeColleges.map(college => (
-             <div className="transition-all hover:scale-105 gap-7 border border-black p-5 rounded-xl " key={college.name} >
+             <div className="transition-all hover:scale-105 gap-7 border border-black p-5 rounded-xl " key={college._id} >
              <div>
               <img className="w-auto h-64 rounded-lg"
                  src={college.college_image}
@@ -44,7 +44,7 @@ const firstThreeColleges = colleges.slice(0, 3);
                </div>
              </div>
              <div className="flex mt-3 justify-center">
-               <Link to={`/college-details/${college}`} className="bg-stone-800 text-white font-semibold w-full text-center text-xl py-2 rounded-xl hover:bg-white hover:text-stone-800 transition-all hover:scale-105 border hover:border-black">
+               <Link to={`/college-details/${college._id}`} className="bg-stone-800 text-white font-semibold w-full text-center text-xl py-2 rounded-xl hover:bg-white hover:text-stone-800 transition-all hover:scale-105 border hover:border-black">
                  Details
                </Link>
              </div>

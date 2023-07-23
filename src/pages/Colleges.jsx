@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import useColleges from "../hooks/useColleges";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Colleges = () => {
   // const style = {
@@ -72,9 +73,9 @@ const Colleges = () => {
               <p className="text-lg  my-2 font-semibold ">
                 Number of research : {college.research_works.number}
               </p>
-              <Button onClick={openModal} variant="contained">
-                Details
-              </Button>
+              <Link to={`/college-details/${college._id}`} className="bg-stone-800 text-white font-semibold w-full text-center text-xl py-2 px-5 rounded-xl my-4 hover:bg-white hover:text-stone-800 transition-all hover:scale-105 border hover:border-black">
+                 Details
+               </Link>
               {showModal && (
                 <div className="fixed inset-0 flex items-center justify-center z-50">
                   <form

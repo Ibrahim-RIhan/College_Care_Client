@@ -13,7 +13,7 @@ const Gallery = () => {
       </h1>
       <div className="gallery-container md:flex-row mb-10 ">
         <img className="h-96 rounded-xl " src={graduate2} alt="" />
-        <div className="md:w-1/3 md:text-start text-center px-3">
+        <div className="md:w-1/3 md:text-end text-center px-3">
           <h1 className="font-semibold text-3xl ">Saint Peter'sBerg College</h1>
           <p className="my-3 text-xl ">Graduation Ceremony -2018 </p>
           <p>
@@ -24,7 +24,7 @@ const Gallery = () => {
           </p>
         </div>
       </div>
-      <div className="gallery-container md:flex-row mb-10 ">
+      <div className="gallery-container-reverse md:flex-row mb-10 ">
         <div className="md:w-1/3 md:text-start text-center px-3">
           <h1 className="font-semibold text-3xl ">Saint Peter'sBerg College</h1>
           <p className="my-3 text-xl ">Graduation Ceremony -2018 </p>
@@ -38,8 +38,8 @@ const Gallery = () => {
         <img className="h-96 rounded-xl " src={graduate3} alt="" />
       </div>
       <div className="gallery-container md:flex-row mb-10 ">
-        <img className="h-96 rounded-xl " src={graduate4} alt="" />
-        <div className="md:w-1/3 md:text-start text-center px-3">
+        <img className="h-96 rounded-xl " src={graduate1} alt="" />
+        <div className="md:w-1/3 md:text-end text-center px-3">
           <h1 className="font-semibold text-3xl ">Saint Peter'sBerg College</h1>
           <p className="my-3 text-xl ">Graduation Ceremony -2018 </p>
           <p>
@@ -50,7 +50,7 @@ const Gallery = () => {
           </p>
         </div>
       </div>
-      <div className="gallery-container md:flex-row mb-10 ">
+      <div className="gallery-container-reverse md:flex-row mb-10 ">
         <div className="md:w-1/3 md:text-start text-center px-3">
           <h1 className="font-semibold text-3xl ">Saint Peter'sBerg College</h1>
           <p className="my-3 text-xl ">Graduation Ceremony -2018 </p>
@@ -65,7 +65,7 @@ const Gallery = () => {
       </div>
       <div className="gallery-container md:flex-row mb-10 ">
         <img className="h-96 rounded-xl " src={graduate6} alt="" />
-        <div className="md:w-1/3 md:text-start text-center px-3">
+        <div className="md:w-1/3 md:text-end text-center px-3">
           <h1 className="font-semibold text-3xl ">Saint Peter'sBerg College</h1>
           <p className="my-3 text-xl ">Graduation Ceremony -2018 </p>
           <p>
@@ -76,7 +76,7 @@ const Gallery = () => {
           </p>
         </div>
       </div>
-      <div className="gallery-container md:flex-row mb-10 ">
+      <div className="gallery-container-reverse md:flex-row mb-10 ">
         <div className="md:w-1/3 md:text-start text-center px-3">
           <h1 className="font-semibold text-3xl ">Saint Peter'sBerg College</h1>
           <p className="my-3 text-xl ">Graduation Ceremony -2018 </p>
@@ -87,7 +87,7 @@ const Gallery = () => {
             amet eius.
           </p>
         </div>
-        <img className="h-96 rounded-xl " src={graduate1} alt="" />
+        <img className="h-96 rounded-xl " src={graduate4} alt="" />
       </div>
     </div>
   );

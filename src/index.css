@@ -9,4 +9,11 @@
     align-items: center ;
     gap: 10px ;
 }
+.gallery-container-reverse {
+    display: flex ;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center ;
+    gap: 10px ;
+}
 

@@ -7,11 +7,15 @@ import MyCollege from "../pages/MyCollege";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Profile from "../pages/Profile";
+import Application from "../pages/Application";
+import CollegeDetails from "../pages/CollegeDetails";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement : <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -40,6 +44,15 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile></Profile>
+      },
+      {
+        path: "/application/:id",
+        element: <Application></Application>
+      },
+      {
+        path: "/college-details/:id",
+        element: <CollegeDetails></CollegeDetails>,
+        loader: ({params}) => fetch('data.json')
       },
     ],
   },

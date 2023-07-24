@@ -19,8 +19,8 @@
 .admission-container{
     display: grid;
     justify-content: center;
-    place-items: center;
-    gap: 20px;
+    align-items: center;
+    gap: 30px;
     place-items: center;
 }
 .banner{

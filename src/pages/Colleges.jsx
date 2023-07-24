@@ -1,43 +1,20 @@
 import {
-  Backdrop,
-  Box,
-  Button,
-  Fade,
-  Modal,
+
   Rating,
-  Typography,
+
 } from "@mui/material";
 import useColleges from "../hooks/useColleges";
-import { useState } from "react";
+
 import { Link } from "react-router-dom";
 
 const Colleges = () => {
-  // const style = {
-  //   position: "absolute",
-  //   top: "50%",
-  //   left: "50%",
-  //   transform: "translate(-50%, -50%)",
-  //   width: 400,
-  //   bgcolor: "background.paper",
-  //   border: "2px solid #000",
-  //   boxShadow: 24,
-  //   p: 4,
-  // };
-  // const [open, setOpen] = useState(false);
-  // const handleOpen = () => setOpen(true);
-  // const handleClose = () => setOpen(false);
+
   const colleges = useColleges();
-  const [showModal, setShowModal] = useState(false);
-  const openModal = () => {
-    setShowModal(true);
-  };
-  const closeModal = () => {
-    setShowModal(false);
-  };
+
 
   return (
     <div className="my-10">
-      <h1 className="text-center text-5xl text-blue-950 font-bold border-y py-5 border-b-teal-600">
+      <h1 className="text-center text-5xl text-blue-950 font-bold py-5">
         You can find all available college here :{" "}
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 justify-center items-stretch place-items-center gap-5 my-10 ">
@@ -70,36 +47,13 @@ const Colleges = () => {
                   {college.admission_dates}
                 </span>
               </p>
-              <p className="text-lg  my-2 font-semibold ">
+              <p className="text-lg  mt-2 mb-5 font-semibold ">
                 Number of research : {college.research_works.number}
               </p>
-              <Link to={`/college-details/${college._id}`} className="bg-stone-800 text-white font-semibold w-full text-center text-xl py-2 px-5 rounded-xl my-4 hover:bg-white hover:text-stone-800 transition-all hover:scale-105 border hover:border-black">
+              <Link to={`/college-details/${college._id}`} className="bg-stone-800 text-white font-semibold w-full text-center text-xl py-2 px-5 rounded-xl my-5 hover:bg-white hover:text-stone-800 transition-all hover:scale-105 border hover:border-black">
                  Details
                </Link>
-              {showModal && (
-                <div className="fixed inset-0 flex items-center justify-center z-50">
-                  <form
-                    
-                    className="bg-orange-300 rounded-lg py-10  px-20"
-                  >
-                    <h2 className="text-5xl font-bold mb-4">{college.name}</h2>
-                {console.log(college)}
-                    <div className="my-5">
-                      <button
-                        className="btn btn-sm btn-accent "
-                        onClick={closeModal}
-                      >
-                        Close
-                      </button>
-                      <input
-                        className="btn ml-5 btn-success btn-sm "
-                        type="submit"
-                        value="Send Feedback"
-                      />
-                    </div>
-                  </form>
-                </div>
-              )}
+           
             
             </div>
           </div>

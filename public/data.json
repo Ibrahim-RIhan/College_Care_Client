@@ -1,6 +1,6 @@
 [
       {
-        "name": "Sample College 1",
+        "name": "Williams College",
         "admission_dates": "2023-08-15",
         "admission_process": "Online application and entrance exam",
         "events": [
@@ -14,7 +14,7 @@
           }
         ],
         "research_works": {
-          "number": 120,
+          "number": 150,
           "details": [
             {
               "title": "Advancements in Renewable Energy Sources",
@@ -41,13 +41,13 @@
           ]
         },
         "sports_categories": ["Football", "Basketball", "Swimming", "Badminton"],
-        "college_image": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=886&q=80",
-        "college_rating": 4.5,
-        "college_review": "Sample College 1 provides an excellent learning environment and has a supportive faculty."
+        "college_image": "https://images.unsplash.com/flagged/photo-1554473675-d0904f3cbf38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvbGxlZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        "college_rating": 4.9,
+        "college_review": "Williams College provides an excellent learning environment and has a supportive faculty."
       },
       {
-        "name": "Sample College 2",
-        "admission_dates": "2023-08-15",
+        "name": "Amherst College",
+        "admission_dates": "2023-09-20",
         "admission_process": "Offline application and interview",
         "events": [
           {
@@ -81,11 +81,128 @@
         },
         "sports_categories": ["Cricket", "Tennis", "Table Tennis", "Volleyball"],
         "college_image": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=886&q=80",
-        "college_rating": 4.2,
-        "college_review": "Sample College 2 offers a diverse range of courses and has a vibrant campus life."
+        "college_rating": 4.7,
+        "college_review": "Amherst College offers a diverse range of courses and has a vibrant campus life."
       },
       {
-        "name": "Sample College 2",
+        "name": "Wellesley College",
+        "admission_dates": "2023-10-15",
+        "admission_process": "Offline application and interview",
+        "events": [
+          {
+            "name": "Cultural Fest",
+            "details": "Date: 2023-10-12 to 2023-10-15, Venue: Open-air Amphitheater"
+          },
+          {
+            "name": "Literary Symposium",
+            "details": "Date: 2023-11-25, Time: 10:00 AM, Venue: Seminar Hall"
+          }
+        ],
+        "research_works": {
+          "number": 80,
+          "details": [
+            {
+              "title": "Impacts of Urbanization on Biodiversity",
+              "faculty": "Prof. David Lee",
+              "description": "This research assesses the effects of rapid urbanization on biodiversity and suggests strategies for conservation.",
+              "publication_date": "2023-02-18",
+              "file_link": "https://example.com/research4.pdf"
+            },
+            {
+              "title": "Data Privacy in the Digital Age",
+              "faculty": "Dr. Lisa Anderson",
+              "description": "The study investigates the challenges and concerns related to data privacy in the era of digitalization and proposes privacy-enhancing measures.",
+              "publication_date": "2023-06-05",
+              "file_link": "https://example.com/research5.pdf"
+            }
+          
+          ]
+        },
+        "sports_categories": ["Cricket", "Tennis", "Table Tennis", "Volleyball"],
+        "college_image": "https://images.unsplash.com/photo-1610894496955-2eb9fb12d2a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGNvbGxlZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        "college_rating": 4.6,
+        "college_review": "Wellesley College offers a diverse range of courses and has a vibrant campus life."
+      },
+      {
+        "name": "Smith College",
+        "admission_dates": "2023-10-15",
+        "admission_process": "Offline application and interview",
+        "events": [
+          {
+            "name": "Cultural Fest",
+            "details": "Date: 2023-10-12 to 2023-10-15, Venue: Open-air Amphitheater"
+          },
+          {
+            "name": "Literary Symposium",
+            "details": "Date: 2023-11-25, Time: 10:00 AM, Venue: Seminar Hall"
+          }
+        ],
+        "research_works": {
+          "number": 80,
+          "details": [
+            {
+              "title": "Impacts of Urbanization on Biodiversity",
+              "faculty": "Prof. David Lee",
+              "description": "This research assesses the effects of rapid urbanization on biodiversity and suggests strategies for conservation.",
+              "publication_date": "2023-02-18",
+              "file_link": "https://example.com/research4.pdf"
+            },
+            {
+              "title": "Data Privacy in the Digital Age",
+              "faculty": "Dr. Lisa Anderson",
+              "description": "The study investigates the challenges and concerns related to data privacy in the era of digitalization and proposes privacy-enhancing measures.",
+              "publication_date": "2023-06-05",
+              "file_link": "https://example.com/research5.pdf"
+            }
+          
+          ]
+        },
+        "sports_categories": ["Cricket", "Tennis", "Table Tennis", "Volleyball"],
+        "college_image": "https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fGNvbGxlZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        "college_rating": 4.3,
+        "college_review": "Smith College offers a diverse range of courses and has a vibrant campus life."
+      },
+      {
+        "name": "Pomona College",
+        "admission_dates": "2023-10-15",
+        "admission_process": "Offline application and interview",
+        "events": [
+          {
+            "name": "Cultural Fest",
+            "details": "Date: 2023-10-12 to 2023-10-15, Venue: Open-air Amphitheater"
+          },
+          {
+            "name": "Literary Symposium",
+            "details": "Date: 2023-11-25, Time: 10:00 AM, Venue: Seminar Hall"
+          }
+        ],
+        "research_works": {
+          "number": 80,
+          "details": [
+            {
+              "title": "Impacts of Urbanization on Biodiversity",
+              "faculty": "Prof. David Lee",
+              "description": "This research assesses the effects of rapid urbanization on biodiversity and suggests strategies for conservation.",
+              "publication_date": "2023-02-18",
+              "file_link": "https://example.com/research4.pdf"
+            },
+            {
+              "title": "Data Privacy in the Digital Age",
+              "faculty": "Dr. Lisa Anderson",
+              "description": "The study investigates the challenges and concerns related to data privacy in the era of digitalization and proposes privacy-enhancing measures.",
+              "publication_date": "2023-06-05",
+              "file_link": "https://example.com/research5.pdf"
+            }
+          
+          ]
+        },
+        "sports_categories": ["Cricket", "Tennis", "Table Tennis", "Volleyball"],
+        "college_image": "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGNvbGxlZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        "college_rating": 4.8,
+        "college_review": "Pomona College offers a diverse range of courses and has a vibrant campus life."
+      },
+      {
+        "name": "Swarthmore College",
         "admission_dates": "2023-08-15",
         "admission_process": "Offline application and interview",
         "events": [
@@ -119,9 +236,9 @@
           ]
         },
         "sports_categories": ["Cricket", "Tennis", "Table Tennis", "Volleyball"],
-        "college_image": "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=886&q=80",
-        "college_rating": 4.2,
-        "college_review": "Sample College 2 offers a diverse range of courses and has a vibrant campus life."
+        "college_image": "https://images.unsplash.com/photo-1592930954854-7d00c87d0cf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGNvbGxlZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        "college_rating": 4.8,
+        "college_review": "Swarthmore College offers a diverse range of courses and has a vibrant campus life."
       }
 ]
 

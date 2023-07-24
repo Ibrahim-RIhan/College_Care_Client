@@ -23,7 +23,7 @@ const Application = () => {
       birthDate: form.birthDate.value,
       photo: form.photo.value,
     };
-    fetch("http://localhost:5000/my-college", {
+    fetch("https://college-care-server.vercel.app/my-college", {
       method: "POST",
       headers: {
         "content-type": "application/json",

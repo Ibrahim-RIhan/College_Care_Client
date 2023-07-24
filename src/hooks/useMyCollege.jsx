@@ -6,7 +6,7 @@ const useMyCollege = () => {
   const email = user?.email;
   const [myCollege, SetMyCollege] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/my-college/${email}`)
+    fetch(`https://college-care-server.vercel.app/my-college/${email}`)
       .then((response) => response.json())
       .then((data) => {
         SetMyCollege(data);

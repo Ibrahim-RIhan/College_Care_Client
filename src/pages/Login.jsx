@@ -36,7 +36,7 @@ const Login = () => {
           email: data.user.email,
         };
         console.log(data);
-        fetch("http://localhost:5000/users", {
+        fetch("https://college-care-server.vercel.app/users", {
           method: "POST",
           headers: {
             "content-type": "application/json",

@@ -8,7 +8,8 @@ import { Rating } from "@mui/material";
 const Review = () => {
   const reviews = useReview();
   return (
-    <div>
+    <div className="my-10">
+      <h1 className="text-5xl text-center font-bold  mb-20">Reviews </h1>
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -26,39 +27,40 @@ const Review = () => {
           },
         }}
         modules={[Pagination]}
-        className="mySwiper place-items-center grid "
+        className="mySwiper px-10 "
       >
         {reviews.map((review) => (
           <SwiperSlide key={review._id}>
-            <div className="bg-red-300">
-              <div className="flex gap-5  items-center">
-                <div className="avatar">
+            <div className="p-5 shadow-lg transition-all hover:scale-105 w-full ">
+          <div className="flex justify-start gap-7 items-center">
+          <div className="avatar">
                   <div className="w-16 rounded-full">
-                    <img
+                  <img
                       className="rounded-full "
                       src={review.image}
                       alt="user image"
                     />
                   </div>
                 </div>
-
-                <div>
-                  <h5>{review.reviewedBy}</h5>
-                <p>{review.collegeName}</p>
-                  <Rating
+         
+            <div>
+              <h1 className="text-xl font-bold ">{review.reviewedBy}</h1>
+              <Rating
                     name="half-rating-read"
                     defaultValue={review.rating}
                     precision={0.5}
                     value={review.rating}
                     readOnly
                   />
-                </div>
-              </div>
-              <div className="shadow-xl text-start">
-                
-                <p>{review.review}</p>
-              </div>
+        
             </div>
+          </div>
+          <p className="my-5 text-gray-600 font-medium">
+          {review.review}
+          </p>
+         
+        </div>
+      
           </SwiperSlide>
         ))}
       </Swiper>

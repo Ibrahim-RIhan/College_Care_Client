@@ -10,12 +10,13 @@ import Profile from "../pages/Profile";
 import Application from "../pages/Application";
 import CollegeDetails from "../pages/CollegeDetails";
 import ErrorPage from "../pages/ErrorPage";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
-    errorElement : <ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -31,7 +32,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/my-college",
-        element: <MyCollege></MyCollege>,
+        element: (
+          <PrivateRoute>
+            <MyCollege></MyCollege>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",
@@ -43,16 +48,17 @@ const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <Profile></Profile>
+        element: <Profile></Profile>,
       },
       {
         path: "/application/:id",
-        element: <Application></Application>
+        element: <PrivateRoute><Application></Application></PrivateRoute>,
       },
       {
         path: "/college-details/:id",
-        element: <CollegeDetails></CollegeDetails>,
-        loader: ({ params }) => fetch(`http://localhost:5000/colleges/${params.id}`)
+        element: <PrivateRoute><CollegeDetails></CollegeDetails></PrivateRoute>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/colleges/${params.id}`),
       },
     ],
   },

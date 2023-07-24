@@ -1,10 +1,13 @@
 import { useContext } from "react";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { useForm } from "react-hook-form";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const from = location?.state?.from?.pathname
   const { signInEmailPassword, signInGoogle } = useContext(AuthContext);
   const {
     register,
@@ -41,7 +44,9 @@ const Login = () => {
           body: JSON.stringify(savedUser),
         })
           .then((res) => res.json())
-          .then((data) => console.log(data));
+          .then(() => {
+            navigate(from, { replace: true })
+          });
       })
       .catch((error) => console.log(error.message));
   };

@@ -5,28 +5,28 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Register = () => {
-  const { signUpEmailPassword, signInGoogle } = useContext(AuthContext);
+  const { signUpEmailPassword, signInGoogle, updateUserProfile } = useContext(AuthContext);
   const {
     register,
-    reset,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
     signUpEmailPassword(data.email, data.password)
-      .then(() => {
-        // updateUserProfile(data.name, data.photo)
-        //   .then((data) => {
-        //     const saveUser = {
-        //       name: data.name,
-        //       email: data.email,
-        //       photo: data.photo,
-        //     };
-        //     console.log(data);
-        //   })
-        //   .catch((error) => console.log(error));
-        reset();
+      .then((data) => {
+        console.log(data);
+        updateUserProfile(data.name, data.photo)
+          .then((data) => {
+            // const saveUser = {
+            //   name: data.name,
+            //   email: data.email,
+            //   photo: data.photoURL,
+            // };
+            console.log("Update", data);
+          })
+          .catch((error) => console.log(error));
+        // reset();
       })
       .catch((error) => {
         alert(error.message);
@@ -40,7 +40,6 @@ const Register = () => {
           image: data.user.photoURL,
           email: data.user.email,
         };
-        console.log(data);
         fetch("http://localhost:5000/users", {
           method: "POST",
           headers: {
@@ -95,8 +94,9 @@ const Register = () => {
           )}
           <input
             {...register("photo", { required: true })}
-            type="file"
-            className="file-input file-input-bordered border-b border-gray-600 transition-all block hover:scale-105 w-full focus:outline-none placeholder:px-2 placeholder:text-gray-500 mb-10"
+            type="text"
+            placeholder="Photo"
+            className="file-input px-2 file-input-bordered border-b border-gray-600 transition-all block hover:scale-105 w-full focus:outline-none placeholder:px-2 placeholder:text-gray-500 mb-10"
           />
           {errors.photo?.type === "required" && <p>Photo is required</p>}
           <input

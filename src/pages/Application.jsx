@@ -1,14 +1,20 @@
 import { useNavigate, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
+import useColleges from "../hooks/useColleges";
 
 const Application = () => {
   const { id } = useParams();
- const nevigate = useNavigate()
+  const colleges = useColleges();
+  const selectedCollege = colleges.find((item) => item._id === id);
+  const navigate = useNavigate();
   const handleApplication = (event) => {
     event.preventDefault();
     const form = event.target;
     const application = {
-      collegeId: id,
+      collegeName: selectedCollege.name,
+      college_image: selectedCollege.college_image,
+      college_rating: selectedCollege.college_rating,
+      college_review: selectedCollege.college_review,
       name: form.name.value,
       email: form.email.value,
       address: form.address.value,
@@ -17,24 +23,24 @@ const Application = () => {
       birthDate: form.birthDate.value,
       photo: form.photo.value,
     };
-    fetch('http://localhost:5000/my-college', {
-        method: 'POST',
-        headers :{
-            'content-type': 'application/json'
-        },
-        body : JSON.stringify(application)
+    fetch("http://localhost:5000/my-college", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(application),
     })
-    .then((res)=> res.json())
-    .then((data)=>{
-        if(data.insertedId){
-            Swal.fire(
-                'Good job!',
-                'Application successfully submitted',
-                'success'
-              )
-nevigate('/admission')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
+          Swal.fire(
+            "Good job!",
+            "Application successfully submitted",
+            "success"
+          );
+          navigate("/admission");
         }
-    })
+      });
   };
   return (
     <div className="my-10">

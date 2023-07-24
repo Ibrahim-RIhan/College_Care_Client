@@ -34,7 +34,7 @@ const Admission = () => {
                  to={`/application/${college._id}`}
                   className="bg-cyan-700 hover:bg-red-400 text-white font-semibold rounded-xl text-lg px-5 py-2 transition-all hover:scale-105"
                 >
-                  See More
+                 Application
                 </Link>
               </div>
             </div>

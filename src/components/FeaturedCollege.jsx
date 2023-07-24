@@ -18,7 +18,7 @@ const firstThreeColleges = colleges.slice(0, 3);
                  src={college.college_image}
                  alt="College Image"  />
                <div>
-                 <h3 className="font-bold text-center text-3xl mb-5 text-blue-950" >
+                 <h3 className="font-bold text-center text-3xl mb-5 mt-3 text-blue-950" >
                    {college.name}
                  </h3>
                  <h3  >

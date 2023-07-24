@@ -9,7 +9,7 @@ import {
 const Footer = () => {
     return (
         <footer 
-        className="grid grid-cols-1 md:grid-cols-2 py-16 px-9 bg-cyan-700 text-gray-200 lg:grid-cols-4 items-start  md:justify-items-center">
+        className="grid grid-cols-1 md:grid-cols-2 py-16 px-9  bg-cyan-700 text-gray-200 lg:grid-cols-4 items-start  md:justify-items-center">
           <div className="flex flex-col md:flex-row my-5  gap-5">
             <MdLocationOn className="text-2xl"></MdLocationOn>
             <div>

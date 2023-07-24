@@ -54,7 +54,7 @@ const Navbar = () => {
                   to="/profile"
                   className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                {user?.email}
+                {user?.displayName}
                 </Link>
                 <button
                   onClick={handleLogOut}
